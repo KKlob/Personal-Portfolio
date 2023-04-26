@@ -1,4 +1,26 @@
------
+# Personal Portfolio Website
+My own little part of the internet. Not just for the professional aspects, but for my own fun projects and enjoyment as well. Eventually this will be a portal to an admin interface where I can access and manage other software projects I deploy.
+
+## Tech Stack
+- Next.js
+- React
+- framer-motion
+- ChakraUI
+
+
+## Checklist
+[x] Create Skeleton and base page change animations <br />
+[ ] Create new wireframe + design plan and add to readme <br />
+[ ] Design interfaces + base light/dark mode switch <br />
+[ ] Further style light/dark mode to be more fleshed out <br />
+[ ] Write tests to ensure Mobile -> Desktop responsiveness meets expectations <br />
+[ ] Update Resume + Job profiles to include personal portfolio site <br />
+
+### ToDo List (Updated as I work)
+ - Add in base text from resume and break up accordingly
+ - Spend some time designing a new wireframe and some base animations / transitions
+
+----
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
