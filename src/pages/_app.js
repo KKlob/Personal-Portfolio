@@ -1,12 +1,14 @@
 import "@/styles/globals.css";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
+import StaticNavBar from "@/components/static_nav_bar";
+import { ChakraProvider } from "@chakra-ui/react";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
   return (
-    <div>
-      This is some text that should stay static
+    <ChakraProvider>
+      <StaticNavBar />
       <AnimatePresence mode="wait">
         <motion.div
           key={router.route}
@@ -31,6 +33,6 @@ export default function App({ Component, pageProps }) {
           <Component {...pageProps} />
         </motion.div>
       </AnimatePresence>
-    </div>
+    </ChakraProvider>
   );
 }

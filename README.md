@@ -19,6 +19,10 @@ My own little part of the internet. Not just for the professional aspects, but f
 ### ToDo List (Updated as I work)
  - Add in base text from resume and break up accordingly
  - Spend some time designing a new wireframe and some base animations / transitions
+ - Work on styling and adding to "About Me" base page. 
+   - Get all content on page before:
+     - [ ] styling for light/dark themes and integrating
+     - [ ] adding some basic sub-animations for both onMount/onUnmount and whenInView
 
 ----
 

@@ -1,0 +1,11 @@
+.StaticNavBar {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 40px;
+}
+
+.Link {
+    margin-left: 20px;
+    margin-right: 20px;
+}
