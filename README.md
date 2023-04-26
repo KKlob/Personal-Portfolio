@@ -23,6 +23,7 @@ My own little part of the internet. Not just for the professional aspects, but f
    - Get all content on page before:
      - [ ] styling for light/dark themes and integrating
      - [ ] adding some basic sub-animations for both onMount/onUnmount and whenInView
+ - Figure out how to keep clippath css applied to profile pic when going through unMount 
 
 ----
 
