@@ -18,8 +18,7 @@ My own little part of the internet. Not just for the professional aspects, but f
 
 ### ToDo List (Updated as I work)
  - Add in base text from resume and break up accordingly
- - Put all animations on pause and get all base content + styling done. Do animations later.
-   - basic text generating for each page. No images. Leave that for the social media links at the bottom
+ - Design + Style all pages.
  - Work on styling and adding to "About Me" base page. 
    - Get all content on page before:
      - [ ] styling for light/dark themes and integrating (Dark will be default)
