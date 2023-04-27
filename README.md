@@ -25,6 +25,10 @@ My own little part of the internet. Not just for the professional aspects, but f
      - [ ] adding some basic sub-animations for both onMount/onUnmount and whenInView
  - Figure out how to keep clippath css applied to profile pic when going through unMount 
 
+
+## WireFarme
+![wireframe for website](./public/images/wireframe.png)
+
 ----
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
