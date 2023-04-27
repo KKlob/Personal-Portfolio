@@ -10,7 +10,7 @@ My own little part of the internet. Not just for the professional aspects, but f
 
 ## Checklist
 [x] Create Skeleton and base page change animations <br />
-[ ] Create new wireframe + design plan and add to readme <br />
+[x] Create new wireframe + design plan and add to readme <br />
 [ ] Design interfaces + base light/dark mode switch <br />
 [ ] Further style light/dark mode to be more fleshed out <br />
 [ ] Write tests to ensure Mobile -> Desktop responsiveness meets expectations <br />
@@ -18,12 +18,11 @@ My own little part of the internet. Not just for the professional aspects, but f
 
 ### ToDo List (Updated as I work)
  - Add in base text from resume and break up accordingly
- - Spend some time designing a new wireframe and some base animations / transitions
+ - Put all animations on pause and get all base content + styling done. Do animations later.
+   - basic text generating for each page. No images. Leave that for the social media links at the bottom
  - Work on styling and adding to "About Me" base page. 
    - Get all content on page before:
-     - [ ] styling for light/dark themes and integrating
-     - [ ] adding some basic sub-animations for both onMount/onUnmount and whenInView
- - Figure out how to keep clippath css applied to profile pic when going through unMount 
+     - [ ] styling for light/dark themes and integrating (Dark will be default)
 
 
 ## WireFarme
