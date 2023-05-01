@@ -76,8 +76,8 @@ export default function StaticNavBar({toggleLink, isDisabled}) {
             style={{
               height: "20px",
               marginTop: "-10px",
-              paddingLeft: "4px",
-              paddingRight: "4px",
+              paddingLeft: "10px",
+              paddingRight: "5px",
               paddingBottom: "2px",
               border: "1px solid white",
               backgroundColor: "#5b5b5b",

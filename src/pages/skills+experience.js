@@ -6,7 +6,6 @@ import { CardBody } from '@chakra-ui/react';
 export default function SkillsExperience () {
     return (
         <CardBody
-      overflowY="scroll"
       sx={{ "::-webkit-scrollbar": 
             { display: "block", width: "5px"},
             "::-webkit-scrollbar-thumb":

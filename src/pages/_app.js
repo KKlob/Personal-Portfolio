@@ -35,7 +35,7 @@ export default function App({ Component, pageProps }) {
                 }}
                 variants={{
                   initialState: {
-                    opacity: 1,
+                    opacity: 0.2,
                     clipPath: "inset(0 0 100% 0)",
                   },
                   animateState: {
@@ -44,7 +44,7 @@ export default function App({ Component, pageProps }) {
                     overflowY: "scroll",
                   },
                   exitState: {
-                    opacity: 1,
+                    opacity: 0.2,
                     clipPath: "inset(0 0 100% 0)",
                   },
                 }}
