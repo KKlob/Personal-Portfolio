@@ -10,7 +10,8 @@ const variants = {
             backgroundColor: "#444444",
             height: "100vh",
             flexDirection: "column",
-            padding: "5px 4px 4px 4px"
+            padding: "5px 4px 4px 4px",
+            width: "100%",
         }
     }),
     terminalText: definePartsStyle({
