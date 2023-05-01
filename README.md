@@ -10,7 +10,7 @@ My own little part of the internet. Not just for the professional aspects, but f
 
 ## Checklist
 [x] Create Skeleton and base page change animations <br />
-[ ] Refactor base skeleton with layout components from ChakraUI - Will make responsiveness more intuitive
+[x] Refactor base skeleton with layout components from ChakraUI - Will make responsiveness more intuitive
 [x] Create new wireframe + design plan and add to readme <br />
 [ ] Design interfaces + base light/dark mode switch <br />
 [ ] Further style light/dark mode to be more fleshed out <br />
@@ -18,8 +18,6 @@ My own little part of the internet. Not just for the professional aspects, but f
 [ ] Update Resume + Job profiles to include personal portfolio site <br />
 
 ### ToDo List (Updated as I work)
- - Work through each base component and refacor using chakraUI layout components
-   - Box, Center, Container, Flex, etc.
  - Add in base text from resume and break up accordingly
  - Add hover effect for contact button + menu items
  - Write tests for responsiveness of site and components
