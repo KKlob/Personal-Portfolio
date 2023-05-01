@@ -18,6 +18,10 @@ My own little part of the internet. Not just for the professional aspects, but f
 
 ### ToDo List (Updated as I work)
  - Add in base text from resume and break up accordingly
+ - Add hover effect for contact button + menu items
+ - Write tests for responsiveness of site and components
+   - Start with base tests for containers and add component level tests as developed.
+   - Problem with some devices not assigning full window height/width to containers. Research proper way to assign height/width
  - Design + Style all pages.
  - Work on styling and adding to "About Me" base page. 
    - Get all content on page before:
