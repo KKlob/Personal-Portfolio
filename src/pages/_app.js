@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }) {
       <ChakraProvider theme={theme}>
         <Box width="100vw" height="100vh" alignItems="center">
             <Container
-              paddingTop={{md: "20vh", lg: "25vh"}}
+              paddingTop={{md: "20vh"}}
               flexDirection="column"
               centerContent
             >
@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }) {
                 bg="#444444"
                 flexDirection="column"
                 width={{ base: "100vw", md: "80vw", lg: "60vw" }}
-                height={{ base: "90vh", md: "60vh", lg: "50vh" }}
+                height={{ base: "90vh", md: "60vh" }}
                 paddingLeft="3px"
                 paddingRight="3px"
                 paddingBottom="3px"
