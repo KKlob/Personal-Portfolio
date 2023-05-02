@@ -5,15 +5,6 @@ import { BUILD_ID_FILE } from 'next/dist/shared/lib/constants';
 const { definePartsStyle, defineMultiStyleConfig } = createMultiStyleConfigHelpers(cardAnatomy.keys);
 
 const variants = {
-    terminalWindow: definePartsStyle({
-        container: {
-            backgroundColor: "#444444",
-            height: "100vh",
-            flexDirection: "column",
-            padding: "5px 4px 4px 4px",
-            width: "100%",
-        }
-    }),
     terminalText: definePartsStyle({
         container: {
             backgroundColor: "gray",
