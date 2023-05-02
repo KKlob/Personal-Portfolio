@@ -19,14 +19,14 @@ My own little part of the internet. Not just for the professional aspects, but f
 
 ### ToDo List (Updated as I work)
  - Add in base text from resume and break up accordingly
- - Add hover effect for contact button + menu items
+ - Switch up base skeleton to resize to terminal window.
+   - Starts as normal sized terminal window with a few selectors
+   - Contact info is displayed underneath the terminal window
+   - When "About Me" / "Skills + XP" / "Projects" is selected a resize-transition and clear screen are performed.
+   - When in mobile-form (md size down) no resize is performed. Only clear screen and display new page.
  - Write tests for responsiveness of site and components
    - Start with base tests for containers and add component level tests as developed.
    - Problem with some devices not assigning full window height/width to containers. Research proper way to assign height/width
- - Design + Style all pages.
- - Work on styling and adding to "About Me" base page. 
-   - Get all content on page before:
-     - [ ] styling for light/dark themes and integrating (Dark will be default)
 
 
 ## WireFarme
