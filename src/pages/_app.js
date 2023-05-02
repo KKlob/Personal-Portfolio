@@ -1,39 +1,22 @@
-// import "@/styles/globals.css";
 import {
   ChakraProvider,
   Box,
   Container,
-  AbsoluteCenter,
   Card,
-  Center,
 } from "@chakra-ui/react";
 import theme from "../styles/theme";
-import { AnimatePresence, motion } from "framer-motion";
-import { useRouter } from "next/router";
-import { useState } from "react";
 import TopBar from "@/components/topbar";
 import ContactFooter from "@/components/contact_footer";
 
 export default function App({ Component, pageProps }) {
-  const router = useRouter();
-
-  // const [isDisabled, setIsDisabled] = useState(false);
-
-  // const toggleLink = () => {
-  //   setIsDisabled(!isDisabled);
-  //   setTimeout(() => {
-  //     setIsDisabled(isDisabled);
-  //   }, 1000);
-  // };
 
   return (
     <div style={{ backgroundColor: "black" }}>
       <ChakraProvider theme={theme}>
-        <Box width="100vw" height="100vh">
+        <Box width="100vw" height="100vh" alignItems="center">
             <Container
               paddingTop={{md: "20vh", lg: "25vh"}}
               flexDirection="column"
-              alignItems="center"
               centerContent
             >
               <Card
@@ -47,7 +30,15 @@ export default function App({ Component, pageProps }) {
                 borderRadius="5px"
               >
                 <TopBar />
-                <Card variant="terminalText">
+                <Card
+                  bg="gray"
+                  flex="1"
+                  width="100%"
+                  alignContent="center"
+                  overflowY="scroll"
+                  color="white"
+                  variant="terminalText"
+                >
                   <Component {...pageProps} />
                 </Card>
               </Card>

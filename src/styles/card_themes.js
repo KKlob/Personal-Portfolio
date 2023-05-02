@@ -7,17 +7,15 @@ const { definePartsStyle, defineMultiStyleConfig } = createMultiStyleConfigHelpe
 const variants = {
     terminalText: definePartsStyle({
         container: {
-            backgroundColor: "gray",
-            flex: "1",
-            width: "100%",
-            alignContent: "center",
-            overflowY: "hidden",
+            "::-webkit-scrollbar": {
+                display: "none"
+            }
         },
         header: {
 
         },
         body: {
-            color: "white",
+            
         },
         footer: {
 

@@ -12,18 +12,18 @@ My own little part of the internet. Not just for the professional aspects, but f
 [x] Create Skeleton and base page change animations <br />
 [x] Refactor base skeleton with layout components from ChakraUI - Will make responsiveness more intuitive
 [x] Create new wireframe + design plan and add to readme <br />
-[ ] Design interfaces + base light/dark mode switch <br />
-[ ] Further style light/dark mode to be more fleshed out <br />
 [ ] Write tests to ensure Mobile -> Desktop responsiveness meets expectations <br />
 [ ] Update Resume + Job profiles to include personal portfolio site <br />
 
 ### ToDo List (Updated as I work)
  - Add in base text from resume and break up accordingly
+ - Add Home Menu + necessary state variables that need updating to trigger motions.
  - Switch up base skeleton to resize to terminal window.
    - Starts as normal sized terminal window with a few selectors
    - Contact info is displayed underneath the terminal window
    - When "About Me" / "Skills + XP" / "Projects" is selected a resize-transition and clear screen are performed.
    - When in mobile-form (md size down) no resize is performed. Only clear screen and display new page.
+ - Style commands list
  - Write tests for responsiveness of site and components
    - Start with base tests for containers and add component level tests as developed.
    - Problem with some devices not assigning full window height/width to containers. Research proper way to assign height/width
