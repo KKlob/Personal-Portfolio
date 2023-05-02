@@ -28,26 +28,11 @@ export default function Home() {
   return (
     <Flex
       direction="column"
-      marginLeft="10px"
+      marginLeft="2px"
     >
-      <Text>Welcome to my personal portfolio</Text>
-      <Text>
-        If you are looking to contact me, please click on the social media links
-        below the terminal windoiw or use the associated command.
-      </Text>
-      <Text>Use the following commands to navigate the site:</Text>
-      <UnorderedList>
-        {Object.keys(commands).map((key) => {
-          return (
-            <ListItem key={uuid()}>
-              {key}: {commands[key]}
-            </ListItem>
-          )
-        })}
-      </UnorderedList>
       <InputGroup>
         <InputLeftElement>
-          <ChevronRightIcon marginTop="-15px" pointerEvents="none"/>
+          <ChevronRightIcon pointerEvents="none"/>
         </InputLeftElement>
         <Input 
           type="text" 
