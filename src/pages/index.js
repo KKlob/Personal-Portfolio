@@ -24,9 +24,9 @@ export default function Home() {
         setCommandHistory([]);
       } else {
         if (command.toLowerCase() == "linkedin") {
-          window.open(commands.linkedin.url, "_blank");
+          setTimeout(() => {window.open(commands.linkedin.url, "LinkedInProfile")}, 1000);
         } else if (command.toLowerCase() == "github") {
-          window.open(commands.github.url, "_blank");
+          setTimeout(() => {window.open(commands.github.url, "GitHubProfile")}, 1000);
         }
         setCommandHistory([...commandHistory, commandElemnt, response]);
       }
