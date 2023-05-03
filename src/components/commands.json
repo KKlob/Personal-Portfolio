@@ -1,33 +1,32 @@
 {
-    "about":
-    {
-        "description": "display Kain's 'About Me'",
-        "output": "Displaying About Me..."
-    },
-    "skills":{
-        "description": "display Kain's 'Skills and Expereience'",
-        "output": "Displaying Skills..."
-    },
-    "projects": {
-        "description": "display Kain's 'Projects'",
-        "output": "Displaying Projects..."
-    },
-    "clear": {
-        "description": "will clear the terminal window",
-        "output": "Clearing terminal window..."
-    },
-    "help": {
-        "description": "display the commands available",
-        "output": "Displaying full list of commands..."
-    },
-    "linkedin": {
-        "description": "Open Kain's LinkedIn profile in a new tab",
-        "output": "Opening new tab...",
-        "url": "https://www.linkedin.com/in/kainklob/"
-    },
-    "github": {
-        "description": "Open Kain's GitHub profile in a new tab",
-        "output": "Opening new tab...",
-        "url": "https://github.com/KKlob"
-    }
+  "about": {
+    "description": "display Kain's 'About Me'",
+    "output": "Displaying About Me..."
+  },
+  "skills": {
+    "description": "display Kain's 'Skills and Expereience'",
+    "output": "Displaying Skills..."
+  },
+  "projects": {
+    "description": "display Kain's 'Projects'",
+    "output": "Displaying Projects..."
+  },
+  "clear": {
+    "description": "will clear the terminal window",
+    "output": "Clearing terminal window..."
+  },
+  "help": {
+    "description": "display the commands available",
+    "output": "Displaying full list of commands..."
+  },
+  "linkedin": {
+    "description": "Open Kain's LinkedIn profile in a new tab",
+    "output": "Opening new tab...",
+    "url": "https://www.linkedin.com/in/kainklob/"
+  },
+  "github": {
+    "description": "Open Kain's GitHub profile in a new tab",
+    "output": "Opening new tab...",
+    "url": "https://github.com/KKlob"
+  }
 }

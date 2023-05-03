@@ -6,7 +6,7 @@ import { Flex } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { Text, Container } from "@chakra-ui/react";
 import commands from "@/components/commands";
-import About from '@/components/about';
+import About from "@/components/about";
 import Skills from "@/components/skills";
 import Projects from "@/components/projects";
 import Help from "@/components/help";
@@ -18,20 +18,15 @@ export default function Home() {
   const handleCommandKeyPress = (e) => {
     if (e.key === "Enter" && userCommand != "") {
       let command = userCommand;
-      const commandElemnt = (
-        <Text color="lightblue">
-          {command}
-        </Text>
-      )
+      const commandElemnt = <Text color="lightblue">{command}</Text>;
       let response = checkCommand(command);
-      if(command.toLowerCase() == "clear"){
+      if (command.toLowerCase() == "clear") {
         setCommandHistory([]);
-      }
-      else {
-        if (command.toLowerCase() == "linkedin"){
+      } else {
+        if (command.toLowerCase() == "linkedin") {
           window.open(commands.linkedin.url, "_blank");
         } else if (command.toLowerCase() == "github") {
-            window.open(commands.github.url, "_blank");
+          window.open(commands.github.url, "_blank");
         }
         setCommandHistory([...commandHistory, commandElemnt, response]);
       }
@@ -42,20 +37,20 @@ export default function Home() {
 
   const checkCommand = (command) => {
     if (Object.keys(commands).includes(command.toLowerCase())) {
-      if(command.toLowerCase() == "about") {
-        return <About />
+      if (command.toLowerCase() == "about") {
+        return <About />;
       } else if (command.toLowerCase() == "skills") {
-        return <Skills />
+        return <Skills />;
       } else if (command.toLowerCase() == "projects") {
-        return <Projects />
+        return <Projects />;
       } else if (command.toLowerCase() == "clear") {
-        return (<Text>{commands.clear.output}</Text>)
+        return <Text>{commands.clear.output}</Text>;
       } else if (command.toLowerCase() == "help") {
-        return <Help />
+        return <Help />;
       } else if (command.toLowerCase() == "linkedin") {
-        return (<Text>{commands.linkedin.output}</Text>)        
+        return <Text>{commands.linkedin.output}</Text>;
       } else if (command.toLowerCase() == "github") {
-        return (<Text>{commands.github.output}</Text>)
+        return <Text>{commands.github.output}</Text>;
       }
     } else {
       return (
@@ -90,7 +85,6 @@ export default function Home() {
       <CommandLine
         setUserCommand={setUserCommand}
         handleCommandKeyPress={handleCommandKeyPress}
-        history={false}
       />
     </Flex>
   );
