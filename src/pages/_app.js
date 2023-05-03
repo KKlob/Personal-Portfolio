@@ -2,7 +2,7 @@ import { ChakraProvider, Box, Container, Card } from "@chakra-ui/react";
 import theme from "../styles/theme";
 import TopBar from "@/components/topbar";
 import ContactFooter from "@/components/contact_footer";
-import { useRef, createContext } from "react";
+import { useRef } from "react";
 import InputContext from "@/components/inputContext";
 
 export default function App({ Component, pageProps }) {
