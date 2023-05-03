@@ -17,13 +17,10 @@ My own little part of the internet. Not just for the professional aspects, but f
 
 ### ToDo List (Updated as I work)
  - Add in base text from resume and break up accordingly
- - Add Home Menu + necessary state variables that need updating to trigger motions.
- - Switch up base skeleton to resize to terminal window.
-   - Starts as normal sized terminal window with a few selectors
-   - Contact info is displayed underneath the terminal window
-   - When "About Me" / "Skills + XP" / "Projects" is selected a resize-transition and clear screen are performed.
-   - When in mobile-form (md size down) no resize is performed. Only clear screen and display new page.
- - Style commands list
+ - Style and fill in About, Skills, and Projects accordingly.
+   - About: simple paragraph describing who I am
+   - Skills: simple write up of all the development skills I have
+   - Projects: Simple display of top three projects I want to share
  - Write tests for responsiveness of site and components
    - Start with base tests for containers and add component level tests as developed.
    - Problem with some devices not assigning full window height/width to containers. Research proper way to assign height/width
