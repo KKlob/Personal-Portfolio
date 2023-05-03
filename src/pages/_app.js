@@ -2,8 +2,16 @@ import { ChakraProvider, Box, Container, Card } from "@chakra-ui/react";
 import theme from "../styles/theme";
 import TopBar from "@/components/topbar";
 import ContactFooter from "@/components/contact_footer";
+import { useRef, createContext } from "react";
+import InputContext from "@/components/inputContext";
 
 export default function App({ Component, pageProps }) {
+  const inputRef = useRef();
+
+  const handleTerminalClick = (e) => {
+    inputRef.current.focus();
+  };
+
   return (
     <div style={{ backgroundColor: "black" }}>
       <ChakraProvider theme={theme}>
@@ -32,8 +40,11 @@ export default function App({ Component, pageProps }) {
                 overflowY="scroll"
                 color="white"
                 variant="terminalText"
+                onClick={handleTerminalClick}
               >
-                <Component {...pageProps} />
+                <InputContext.Provider value={inputRef}>
+                  <Component {...pageProps} />
+                </InputContext.Provider>
               </Card>
             </Card>
             <ContactFooter />

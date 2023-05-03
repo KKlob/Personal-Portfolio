@@ -1,7 +1,11 @@
 import { Flex, InputGroup, InputLeftElement, Input } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
+import { useContext } from "react";
+import InputContext from "./inputContext";
 
 export default function CommandLine({ setUserCommand, handleCommandKeyPress }) {
+
+  const inputRef = useContext(InputContext);
   return (
     <Flex direction="column" marginLeft="2px" marginTop="3px">
       <InputGroup bg="gray">
@@ -25,6 +29,7 @@ export default function CommandLine({ setUserCommand, handleCommandKeyPress }) {
           fontSize={{ base: "12px", md: "15px" }}
           paddingLeft="20px"
           bg="gray"
+          ref={inputRef}
         />
       </InputGroup>
     </Flex>
