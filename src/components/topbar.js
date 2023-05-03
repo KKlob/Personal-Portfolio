@@ -13,6 +13,7 @@ import {
   Code,
   Stack,
   Divider,
+  Box,
 } from "@chakra-ui/react";
 import { QuestionOutlineIcon } from "@chakra-ui/icons";
 import { v4 as uuid } from "uuid";
@@ -28,7 +29,7 @@ export default function TopBar() {
     help: "display the commands available",
   };
 
-  const {isOpen, onOpen, onClose } = useDisclosure();
+  const {isOpen, onOpen, onClose } = useDisclosure({defaultIsOpen: true});
 
   return (
     <Flex marginTop="4px" marginBottom="4px">
@@ -73,9 +74,18 @@ export default function TopBar() {
             </Text>
             <Divider orientation="horizontal" marginTop="10px" marginBottom="10px"/>
             <Text>Use the following commands to navigate the site</Text>
-            <Stack direction="column" align="left" marginTop="2px">
+            <Stack direction="column" align="left" marginTop="2px" marginLeft={{base: "10%", md: "15%"}}>
               {Object.keys(commands).map((key) => {
-                return <Code align="left" fontSize={{base: "10px", md: "14px"}}key={uuid()}>{key + ": " + commands[key]}</Code>;
+                return (
+                  <Box key={uuid()} display="inline-flex">
+                    <Code fontSize={{base: "10px", md: "14px"}}>
+                      {key}
+                    </Code>
+                    <Text fontSize={{base: "10px", md: "14px"}}>
+                      {" --> " + commands[key]}
+                    </Text>
+                  </Box>
+                )
               })}
             </Stack>
           </ModalBody>
