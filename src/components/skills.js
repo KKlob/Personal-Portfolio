@@ -1,7 +1,9 @@
+import {Flex, Text} from '@chakra-ui/react';
+
 export default function Skills () {
     return (
-        <p>
-            this is my skills list
-        </p>
+        <Flex direction="column">
+            <Text>This is the skills text</Text>
+        </Flex>
     )
 }

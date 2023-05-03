@@ -18,16 +18,9 @@ import {
 import { QuestionOutlineIcon } from "@chakra-ui/icons";
 import { v4 as uuid } from "uuid";
 import { FiChevronRight } from "react-icons/fi";
+import commands from '@/components/commands';
 
 export default function TopBar() {
-  const commands = {
-    about: "display Kain's 'About Me'",
-    skills: "display Kain's 'Skills and Expereience'",
-    projects: "display Kain's 'Projects'",
-    linkedin: "open new tab to Kain's LinkedIn profile",
-    github: "open new tab to Kain's GitHub profile",
-    help: "display the commands available",
-  };
 
   const {isOpen, onOpen, onClose } = useDisclosure({defaultIsOpen: true});
 
@@ -56,7 +49,7 @@ export default function TopBar() {
           Kain Klob - Personal Portfolio Terminal
         </Text>
       </Center>
-      <QuestionOutlineIcon align="right" marginRight="5px" color="white" onClick={onOpen}/>
+      <QuestionOutlineIcon align="right" marginRight="5px" color="lightgray" onClick={onOpen} _hover={{color: "white"}}/>
       <Modal isOpen={isOpen} onClose={onClose} motionPreset="scale" size={{base: "xs", md: "md", lg: "lg"}}isCentered>
         <ModalOverlay />
         <ModalContent>
@@ -82,7 +75,7 @@ export default function TopBar() {
                       {key}
                     </Code>
                     <Text fontSize={{base: "10px", md: "14px"}}>
-                      {" --> " + commands[key]}
+                      {" --> " + commands[key]["description"]}
                     </Text>
                   </Box>
                 )
