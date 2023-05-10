@@ -1,10 +1,11 @@
 import { Flex, Text } from "@chakra-ui/react";
+import {about} from '@/components/content';
 
 export default function About() {
   return (
     <Flex direction="column">
-      <Text>This is the about me text</Text>
-      <Text>Here is the second line</Text>
+      <Text>{about.profesional}</Text>
+      <Text>{about.additional}</Text>
     </Flex>
   );
 }
