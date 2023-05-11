@@ -19,6 +19,7 @@ My own little part of the internet. Not just for the professional aspects, but f
    - Start with base tests for containers and add component level tests as developed.
    - Problem with some devices not assigning full window height/width to containers. Research proper way to assign height/width
  - refactor text styling to be uniform and easily edited throughout application
+ - Add module for direct message component. Easy way for someone to send an email to me
 
 
 ## WireFarme
