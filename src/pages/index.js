@@ -18,7 +18,7 @@ export default function Home() {
   const handleCommandKeyPress = (e) => {
     if (e.key === "Enter" && userCommand != "") {
       let command = userCommand;
-      const commandElemnt = <Text color="lightblue">{command}</Text>;
+      const commandElemnt = <Text color="lightblue" fontSize={{base: "12px", md: "15px"}}>{command}</Text>;
       let response = checkCommand(command);
       if (command.toLowerCase() == "clear") {
         setCommandHistory([]);
@@ -77,6 +77,8 @@ export default function Home() {
               align="left"
               marginTop="4px"
               marginRight="4px"
+              height={{base: "12px", md: "15px"}}
+              width={{base: "12px", md: "15px"}}
             />
             {line}
           </Flex>

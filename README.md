@@ -16,14 +16,10 @@ My own little part of the internet. Not just for the professional aspects, but f
 [ ] Update Resume + Job profiles to include personal portfolio site <br />
 
 ### ToDo List (Updated as I work)
- - Add in base text from resume and break up accordingly
- - Style and fill in About, Skills, and Projects accordingly.
-   - About: simple paragraph describing who I am
-   - Skills: simple write up of all the development skills I have
-   - Projects: Simple display of top three projects I want to share
  - Write tests for responsiveness of site and components
    - Start with base tests for containers and add component level tests as developed.
    - Problem with some devices not assigning full window height/width to containers. Research proper way to assign height/width
+ - Finish responsive styling and create a uniform way of updating styling across the components
 
 
 ## WireFarme

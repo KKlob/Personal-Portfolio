@@ -27,7 +27,7 @@ export default function CommandLine({ setUserCommand, handleCommandKeyPress }) {
           onChange={(e) => setUserCommand(e.currentTarget.value)}
           onKeyPress={handleCommandKeyPress}
           fontSize={{ base: "12px", md: "15px" }}
-          paddingLeft="20px"
+          paddingLeft="15px"
           bg="gray"
           ref={inputRef}
         />
