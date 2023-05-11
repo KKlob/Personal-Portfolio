@@ -4,7 +4,6 @@ My own little part of the internet. Not just for the professional aspects, but f
 ## Tech Stack
 - Next.js
 - React
-- framer-motion
 - ChakraUI
 
 
@@ -19,7 +18,7 @@ My own little part of the internet. Not just for the professional aspects, but f
  - Write tests for responsiveness of site and components
    - Start with base tests for containers and add component level tests as developed.
    - Problem with some devices not assigning full window height/width to containers. Research proper way to assign height/width
- - Finish responsive styling and create a uniform way of updating styling across the components
+ - refactor text styling to be uniform and easily edited throughout application
 
 
 ## WireFarme
