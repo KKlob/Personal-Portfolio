@@ -1,12 +1,30 @@
-import { ChakraProvider, Box, Container, Card } from "@chakra-ui/react";
+import {
+  ChakraProvider,
+  Box,
+  Container,
+  Card,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,
+  Divider,
+} from "@chakra-ui/react";
 import theme from "../styles/theme";
 import TopBar from "@/components/topbar";
 import ContactFooter from "@/components/contact_footer";
 import { useRef } from "react";
 import InputContext from "@/components/inputContext";
+import About from "@/components/about";
+import Skills from "@/components/skills";
+import Projects from "@/components/projects";
 
 export default function App({ Component, pageProps }) {
   const inputRef = useRef();
+
+  const { isOpen, onOpen, onClose } = useDisclosure({defaultIsOpen: true});
 
   const handleTerminalClick = (e) => {
     inputRef.current.focus();
@@ -44,6 +62,20 @@ export default function App({ Component, pageProps }) {
               >
                 <InputContext.Provider value={inputRef}>
                   <Component {...pageProps} />
+                  <Modal onClose={onClose} isOpen={isOpen} size="xl" isCentered>
+                    <ModalOverlay />
+                    <ModalContent alignItems="center">
+                      <ModalHeader>Kain Klob</ModalHeader>
+                      <ModalCloseButton />
+                      <ModalBody>
+                        <About center={true}/>
+                        <Divider mt="10px" mb="10px"/>
+                        <Skills center={true}/>
+                        <Divider mt="10px" mb="10px"/>
+                        <Projects center={true}/>
+                      </ModalBody>
+                    </ModalContent>
+                  </Modal>
                 </InputContext.Provider>
               </Card>
             </Card>

@@ -21,7 +21,7 @@ import { FiChevronRight } from "react-icons/fi";
 import commands from "@/components/commands";
 
 export default function TopBar() {
-  const { isOpen, onOpen, onClose } = useDisclosure({ defaultIsOpen: true });
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <Flex marginTop="4px" marginBottom="4px">
