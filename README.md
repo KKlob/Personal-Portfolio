@@ -12,7 +12,7 @@ My own little part of the internet. Not just for the professional aspects, but f
 [x] Refactor base skeleton with layout components from ChakraUI - Will make responsiveness more intuitive
 [x] Create new wireframe + design plan and add to readme <br />
 [ ] Write tests to ensure Mobile -> Desktop responsiveness meets expectations <br />
-[ ] Update Resume + Job profiles to include personal portfolio site <br />
+[x] Update Resume + Job profiles to include personal portfolio site <br />
 
 ### ToDo List (Updated as I work)
  - Write tests for responsiveness of site and components
@@ -20,6 +20,7 @@ My own little part of the internet. Not just for the professional aspects, but f
    - Problem with some devices not assigning full window height/width to containers. Research proper way to assign height/width
  - refactor text styling to be uniform and easily edited throughout application
  - Add module for direct message component. Easy way for someone to send an email to me
+ - Add default open module with About me, Skills, and Projects displayed. Have help module closed by default.
 
 
 ## WireFarme
